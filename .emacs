@@ -2,9 +2,13 @@
 (load-file "~/dev/emacs/color-theme-gruber-darker.el")
 (color-theme-gruber-darker)
 
-;; set font size
-(set-face-attribute 'default (selected-frame) :height 150)
+;;; jsim support, assumes jsim.el lives in your home directory
+(autoload 'jsim-mode "~/dev/emacs/jsim" nil t)
+(setq auto-mode-alist (cons '("\.jsim$" . jsim-mode) auto-mode-alist))
+(add-hook 'jsim-mode-hook 'turn-on-font-lock)
 
+;; set font size
+(set-face-attribute 'default (selected-frame) :height 110)
 
 ;; Set html preferences
 (add-hook 'html-mode-hook
