@@ -1,6 +1,12 @@
 " Show column and row in footer
 set ruler
 
+" Show line numbers
+set number
+
+" Allow vim to recognize filetype
+filetype on
+
 " Set colorscheme and font
 colorscheme desert
 set guifont=Consolas\ 14
