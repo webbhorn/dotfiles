@@ -1,3 +1,6 @@
+" Use vim features
+set nocompatible
+
 " Show column and row in footer
 set ruler
 
@@ -19,4 +22,7 @@ filetype plugin on
 
 " Set the correct tab setting
 set tabstop=4 shiftwidth=4 softtabstop=4 expandtab
+
+" Automatically indent while editing
+set autoindent
 
