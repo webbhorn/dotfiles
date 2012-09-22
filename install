@@ -1,18 +1,18 @@
 #!/bin/sh
 
-echo "Installing .emacs file to ~/.emacs ..."
-cp .emacs ~/
+echo "Creating symlink ~/.emacs --> ~/dotfiles/.emacs ..."
+ln -s ~/dotfiles/.emacs ~/.emacs
 echo "done.\n"
 
-echo "Installing .emacs file directory to ~/.emacsd ..."
-cp -r .emacsd ~/
+echo "Creating symlink ~/.emacsd --> ~/dotfiles/.emacsd ..."
+ln -s ~/dotfiles/.emacsd ~/.emacsd
 echo "done.\n"
 
-echo "Installing .vim directory to ~/.vim ..."
-cp -r .vim ~/
+echo "Creating symlink ~/.vim --> ~/dotfiles/.vim ..."
+ln -s ~/dotfiles/.vim ~/.vim
 echo "done.\n"
 
-echo "Installing .vimrc config file to ~/.vimrc ..."
-cp .vimrc ~/
+echo "Creating symlink ~/ .vimrc -->  ~/dotfiles/.vimrc ..."
+ln -s ~/dotfiles/.vimrc ~/.vimrc
 echo "done.\n"
 
