@@ -26,3 +26,5 @@ set tabstop=2 shiftwidth=2 softtabstop=2 expandtab
 " Automatically indent while editing
 set autoindent
 
+" Automatically wrap words at 79 characters
+set textwidth=79
