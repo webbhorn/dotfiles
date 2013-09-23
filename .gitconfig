@@ -1,0 +1,10 @@
+[user]
+	name = Webb Horn
+	email = webbhorn@mit.edu
+[color]
+	ui = true
+[diff]
+	tool = meld
+[merge]
+	tool = meld
+
