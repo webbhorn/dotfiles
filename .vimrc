@@ -28,3 +28,6 @@ set autoindent
 
 " Automatically wrap words at 79 characters
 set textwidth=79
+
+" Recognize markdown files.
+au BufRead,BufNewFile *.md set filetype=markdown
