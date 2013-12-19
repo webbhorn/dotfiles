@@ -1,1 +1,7 @@
-# Created by newuser for 5.0.2
+# autocomplete
+autoload -U compinit promptinit
+compinit
+promptinit
+
+# Set prompt to "grml" theme
+prompt grml
