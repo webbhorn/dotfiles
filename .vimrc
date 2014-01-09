@@ -21,7 +21,7 @@ syntax on
 filetype plugin on
 
 " Set the correct tab setting
-set tabstop=8 softtabstop=2 shiftwidth=2 expandtab
+set tabstop=8 softtabstop=2 shiftwidth=2 noexpandtab
 
 " `:set list` to display whitespace chars
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
