@@ -34,3 +34,7 @@ set textwidth=79
 
 " Recognize markdown files.
 au BufRead,BufNewFile *.md set filetype=markdown
+
+" Project-specific vim settings
+set exrc
+set secure
