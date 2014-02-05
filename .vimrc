@@ -1,3 +1,12 @@
+" golang syntax highlighting
+" Some Linux distributions set filetype in /etc/vimrc.
+" Clear filetype flags before changing runtimepath to force Vim to reload them.
+filetype off
+filetype plugin indent off
+set runtimepath+=$GOROOT/misc/vim
+filetype plugin indent on
+syntax on
+
 " Use vim features
 set nocompatible
 
@@ -13,12 +22,6 @@ filetype on
 " Set colorscheme and font
 colorscheme desert
 set guifont=Consolas\ 14
-
-" Enable syntax highlighting
-syntax on
-
-" Use the file type plugins
-filetype plugin on
 
 " Set the correct tab setting
 set tabstop=8 softtabstop=2 shiftwidth=2 noexpandtab
