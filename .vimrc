@@ -26,7 +26,7 @@ colorscheme desert
 set guifont=Consolas\ 14
 
 " Set the correct tab setting
-set tabstop=8 softtabstop=2 shiftwidth=2 noexpandtab
+set tabstop=6 softtabstop=2 shiftwidth=2 noexpandtab
 
 " `:set list` to display whitespace chars
 set listchars=eol:$,tab:>-,trail:~,extends:>,precedes:<
@@ -42,4 +42,27 @@ au BufRead,BufNewFile *.md set filetype=markdown
 
 " Project-specific vim settings
 set exrc
-set secure
+
+"Use jj as escape in insert mode and command line mode
+inoremap jj <C-c>
+cnoremap jj <C-c>
+
+" Set mapleader
+let mapleader=" "
+
+" Navigation by visual line rather than \n line
+noremap j gj
+noremap k gk
+
+" Allow changing buffers w/o saving
+set hidden
+
+" Set backup directory
+set backupdir=~/tmp,/var/tmp,/tmp
+
+"Use semi-colon to clear highlighted search results
+nmap <silent> <Leader>; :noh<CR>
+
+" Leave space below cursor when strolling
+set scrolloff=3
+
