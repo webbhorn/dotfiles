@@ -66,3 +66,5 @@ nmap <silent> <Leader>; :noh<CR>
 " Leave space below cursor when strolling
 set scrolloff=3
 
+" Underline cursor line.
+set cursorline
