@@ -1,5 +1,5 @@
 CWD=$(pwd)
-FILES=$(ls -a | tr [:blank:] "\n" | grep -v -E "^[\.]+$" | grep -v -E "install.sh")
+FILES=$(ls -a | tr [:blank:] "\n" | grep -v -E "^[\.]+$" | grep -v -E "install.sh" | grep -v -E ".git")
 
 for f in $FILES
 do
