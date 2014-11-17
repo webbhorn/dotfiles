@@ -10,7 +10,7 @@ do
   if [ -L ~/$f ]; then
     printf "${red}SKIP:${nc} %10.10s already links to %s%.10s\n" $f $CWD
   else
-    printf "${green}LINK:${nc} ln -s $CWD/f ~/$f"
+    printf "${green}LINK:${nc} ln -s $CWD/f ~/$f\n"
     ln -s $CWD/$f ~/$f
   fi
 done
