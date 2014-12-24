@@ -1,18 +1,12 @@
-;; set color theme
-(load-file "~/dev/emacs/color-theme-gruber-darker.el")
-(color-theme-gruber-darker)
+;; Some stuff for the package manager??
+(setq package-archives '(("ELPA" . "http://tromey.com/elpa/")
+			 ("gnu" . "http://elpa.gnu.org/packages/")
+			 ("marmalade" . "http://marmalade-repo.org/packages/")))
 
-;;; jsim support, assumes jsim.el lives in your home directory
-(autoload 'jsim-mode "~/dev/emacs/jsim" nil t)
-(setq auto-mode-alist (cons '("\.jsim$" . jsim-mode) auto-mode-alist))
-(add-hook 'jsim-mode-hook 'turn-on-font-lock)
-
-;; set font size
-(set-face-attribute 'default (selected-frame) :height 110)
-
-;; Set html preferences
-(add-hook 'html-mode-hook
-          (lambda()
-            (setq sgml-basic-offset 4)
-            (setq indent-tabs-mode t)))
+;; Enable evil-mode (vim keybindings & modal editing)
+(package-initialize)
+(evil-mode 1)
+(setq key-chord-two-keys-delay 0.5)
+(key-chord-define evil-insert-state-map "jj" 'evil-normal-state)
+(key-chord-mode 1)
 
