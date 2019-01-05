@@ -30,6 +30,7 @@ rc_files=$(
 	tr [:blank:] "\n" |
 	grep -v -E "^[\.]+$" |
 	grep -v -E "install" |
+	grep -v -E "README" |
 	grep -v -E ".git")
 for f in $rc_files; do
   if [ -L ~/$f ]; then
