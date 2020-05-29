@@ -1,11 +1,3 @@
-execute pathogen#infect()
-
-" golang syntax highlighting
-" Some Linux distributions set filetype in /etc/vimrc.
-" Clear filetype flags before changing runtimepath to force Vim to reload them.
-filetype off
-filetype plugin indent off
-set runtimepath+=$GOROOT/misc/vim
 filetype plugin indent on
 syntax on
 
@@ -20,10 +12,6 @@ set number
 
 " Allow vim to recognize filetype
 filetype on
-
-" Set colorscheme and font
-colorscheme desert
-set guifont=Consolas\ 14
 
 " Set the correct tab setting
 set tabstop=6 softtabstop=2 shiftwidth=2 noexpandtab
